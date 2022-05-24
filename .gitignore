@@ -1,23 +1,14 @@
-# Compiled class file
-*.class
+def weeklyPaid(hours_worked, wage):
+	hours_worked > 40:
+		return 40 * wage + (hours_worked - 40) * wage * 15
+		return hours_worked * wage
 
-# Log file
-*.log
 
-# BlueJ files
-*.ctxt
+hours_worked = 50
+wage = 600
+tax = 60
+gross = 31200
+pay = weeklyPaid(hours_worked, wage)
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+"Total gross pay: Rs.{pay:.2f} "
 
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
